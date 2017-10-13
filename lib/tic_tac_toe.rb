@@ -93,13 +93,13 @@ end
 
 def play(board)
   display_board(board)
-  
+
   until over?(board)
     turn(board)
   end
 
   if won?(board)
-    puts "Congratulations #{winner(board)}!"
+    return puts "Congratulations #{winner(board)}!"
   end
 
   puts "Cat's Game!"
